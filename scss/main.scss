@@ -1,0 +1,40 @@
+// include foundation
+
+@import "../node_modules/foundation-sites/scss/foundation";
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+  background-color: #6A6B83;
+  border: 2px solid #533747;
+  color: #86BBBD;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+
+  h1 {
+    text-align: center;
+    color: #76949F;
+  }
+  #chatbox {
+    border: 5px solid #533747;
+    padding: 50px;
+    width: 100%;
+    height: 40%;
+  }
+  #inputbox {
+    border: 5px solid #76949F;
+    padding: 40px;
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+  #send-message {
+    border: 3px solid white;
+    padding: 10px;
+  }
+  .message {
+    border-bottom: 1px dashed #86BBBD;
+  }
+}

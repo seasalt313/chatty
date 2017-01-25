@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chatty</title>
+    <!-- add css file -->
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+    <script type="x-mustache-template" id="chat-template">
+    <div class="message">
+    <p>From: {{name}} </p>
+    <p>Message: {{message}} </p>
+    </div>
+
+    </script>
+
+
+  </head>
+  <body>
+    <h1>Feelin' Chatty?</h1>
+
+    <section id="chatbox">
+
+    </section>
+    <section id="inputbox">
+      <input type="text" placeholder="Write Name" id="inputName">
+      <input type="text"  placeholder="Write Message" id='inputmsg'>
+      <button type="button" id="send-message" name="button">send</button>
+    </section>
+
+    <!-- // adding backbone -->
+    <script src="http://underscorejs.org/underscore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="http://backbonejs.org/backbone.js"></script>
+    <!-- add js file -->
+    <script src="app.js" type="text/javascript">
+    </script>
+  </body>
+</html>
